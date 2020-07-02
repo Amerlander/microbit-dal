@@ -21,6 +21,11 @@ THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
+
+==================
+Modifications Copyright (c) 2016 Calliope GbR
+Modifications are provided by DELTA Systems (Georg Sommer) - Thomas Kern
+und Björn Eberhardt GbR by arrangement with Calliope GbR.
 */
 
 #ifndef MICROBIT_COMPONENT_H
@@ -43,25 +48,28 @@ DEALINGS IN THE SOFTWARE.
 #define MICROBIT_ID_SERIAL              12
 #define MICROBIT_ID_GESTURE             13          // Gesture events
 
-#define MICROBIT_ID_IO_P0               100         //P0 is the left most pad (ANALOG/DIGITAL)
-#define MICROBIT_ID_IO_P1               101         //P1 is the middle pad (ANALOG/DIGITAL)
-#define MICROBIT_ID_IO_P2               102         //P2 is the right most pad (ANALOG/DIGITAL)
+#define MICROBIT_ID_IO_P0               100         //P0 is the left most pad (ANALOG/DIGITAL)  (CM: P1)
+#define MICROBIT_ID_IO_P1               101         //P1 is the middle pad (ANALOG/DIGITAL)     (CM: P2)
+#define MICROBIT_ID_IO_P2               102         //P2 is the right most pad (ANALOG/DIGITAL) (CM: analog/tx)
 #define MICROBIT_ID_IO_P3               103         //COL1 (ANALOG/DIGITAL)
 #define MICROBIT_ID_IO_P4               104         //BTN_A
 #define MICROBIT_ID_IO_P5               105         //COL2 (ANALOG/DIGITAL)
 #define MICROBIT_ID_IO_P6               106         //ROW2
 #define MICROBIT_ID_IO_P7               107         //ROW1
-#define MICROBIT_ID_IO_P8               108         //PIN 18
+#define MICROBIT_ID_IO_P8               108         //PIN 18 (CM: analog/tx)
 #define MICROBIT_ID_IO_P9               109         //ROW3
 #define MICROBIT_ID_IO_P10              110         //COL3 (ANALOG/DIGITAL)
 #define MICROBIT_ID_IO_P11              111         //BTN_B
-#define MICROBIT_ID_IO_P12              112         //PIN 20
+#define MICROBIT_ID_IO_P12              112         //PIN 20 (CM: P0)
 #define MICROBIT_ID_IO_P13              113         //SCK
 #define MICROBIT_ID_IO_P14              114         //MISO
 #define MICROBIT_ID_IO_P15              115         //MOSI
-#define MICROBIT_ID_IO_P16              116         //PIN 16
+#define MICROBIT_ID_IO_P16              116         //PIN 16 (CM: P3)
 #define MICROBIT_ID_IO_P19              119         //SCL
 #define MICROBIT_ID_IO_P20              120         //SDA
+#ifdef TARGET_NRF51_CALLIOPE
+#define MICROBIT_ID_IO_P21              121         // CM: analog microphone
+#endif
 
 #define MICROBIT_ID_IO_INT1             130         //INT1
 #define MICROBIT_ID_IO_INT2             131         //INT2
