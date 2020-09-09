@@ -52,7 +52,7 @@ MicroBitIO::MicroBitIO(int ID_P0, int ID_P1, int ID_P2,
                        int ID_P15,int ID_P16,int ID_P19,
                        int ID_P20
 #ifdef TARGET_NRF51_CALLIOPE
-                       , int ID_P21
+                       , int ID_P21, int ID_P29, int ID_P30
 #endif
     ) :
     P0 (ID_P0, MICROBIT_PIN_P0, PIN_CAPABILITY_ALL),             //P0 is the left most pad (ANALOG/DIGITAL/TOUCH) (CM: P1)
@@ -80,7 +80,9 @@ MicroBitIO::MicroBitIO(int ID_P0, int ID_P1, int ID_P2,
     P20(ID_P20,MICROBIT_PIN_P20,PIN_CAPABILITY_STANDARD)         //SDA
 #ifdef TARGET_NRF51_CALLIOPE
     ,
-    P21(ID_P21,MICROBIT_PIN_P21,PIN_CAPABILITY_ANALOG_IN)        // (CM: Microphone)
+    P21(ID_P21,MICROBIT_PIN_P21,PIN_CAPABILITY_ANALOG_IN),        // (CM: Microphone)
+    P29 (ID_P29, MICROBIT_PIN_P29, PIN_CAPABILITY_ALL),           // Motor1
+    P30 (ID_P30, MICROBIT_PIN_P30, PIN_CAPABILITY_ALL)            // Motor2
 #endif
 {
 }

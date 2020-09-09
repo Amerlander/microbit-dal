@@ -69,6 +69,8 @@ und Björn Eberhardt GbR by arrangement with Calliope GbR.
 #define MICROBIT_ID_IO_P20              120         //SDA
 #ifdef TARGET_NRF51_CALLIOPE
 #define MICROBIT_ID_IO_P21              121         // CM: analog microphone
+#define MICROBIT_ID_IO_P29              129         // CM: analog motor1
+#define MICROBIT_ID_IO_P30              130         // CM: analog motor2
 #endif
 
 #define MICROBIT_ID_IO_INT1             130         //INT1

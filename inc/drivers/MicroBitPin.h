@@ -65,6 +65,8 @@ und Björn Eberhardt GbR by arrangement with Calliope GbR.
 #define MICROBIT_PIN_P19                    SCL         //SCL
 #define MICROBIT_PIN_P20                    SDA         //SDA
 #define MICROBIT_PIN_P21                    MIC         // CM: analog microphone
+#define MICROBIT_PIN_P29                    MOTOR_IN1         // CM: analog microphone
+#define MICROBIT_PIN_P30                    MOTOR_IN2         // CM: analog microphone
 
 // special pins for Calliope mini (only used internally for drivers)
 #define CALLIOPE_PIN_MOTOR_SLEEP            MOTOR_NSLEEP  // motor driver sleep pin
