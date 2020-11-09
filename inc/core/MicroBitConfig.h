@@ -52,7 +52,7 @@ DEALINGS IN THE SOFTWARE.
 #ifdef TARGET_MCU_NRF51_16K_S130
 #define MICROBIT_SD_LIMIT                       0x20002800
 #else
-#define MICROBIT_SD_LIMIT                       0x20002800
+#define MICROBIT_SD_LIMIT                       0x20002000
 #endif
 #endif
 
@@ -61,7 +61,7 @@ DEALINGS IN THE SOFTWARE.
 #ifdef TARGET_MCU_NRF51_16K_S130
 #define MICROBIT_SD_GATT_TABLE_START            0x20002200
 #else
-#define MICROBIT_SD_GATT_TABLE_START            0x20002200
+#define MICROBIT_SD_GATT_TABLE_START            0x20001900
 #endif
 #endif
 
@@ -129,7 +129,7 @@ extern uint32_t __etext;
 // The amount of memory reused depends upon whether or not BLE is enabled using MICROBIT_BLE_ENABLED.
 // Set '1' to enable.
 #ifndef MICROBIT_HEAP_REUSE_SD
-#define MICROBIT_HEAP_REUSE_SD                  1
+#define MICROBIT_HEAP_REUSE_SD                  0
 #endif
 
 // The amount of memory allocated to Soft Device to hold its BLE GATT table.
