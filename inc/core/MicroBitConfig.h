@@ -129,7 +129,7 @@ extern uint32_t __etext;
 // The amount of memory reused depends upon whether or not BLE is enabled using MICROBIT_BLE_ENABLED.
 // Set '1' to enable.
 #ifndef MICROBIT_HEAP_REUSE_SD
-#define MICROBIT_HEAP_REUSE_SD                  0
+#define MICROBIT_HEAP_REUSE_SD                  1
 #endif
 
 // The amount of memory allocated to Soft Device to hold its BLE GATT table.
